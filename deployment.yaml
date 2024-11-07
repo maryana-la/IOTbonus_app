@@ -9,7 +9,7 @@ spec:
   ports:
     - protocol: TCP
       port: 8085
-      targetPort: 8084
+      targetPort: 8085
 
 apiVersion: apps/v1
 kind: Deployment
@@ -29,6 +29,6 @@ spec:
     spec:
       containers:
         - name: wil42-playground
-          image: wil42/playground:v2
+          image: wil42/playground:v1
           ports:
-            - containerPort: 8084
+            - containerPort: 8085
